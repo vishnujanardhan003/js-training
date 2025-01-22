@@ -28,6 +28,35 @@ let p3 = new Promise((resolve, reject) => {
     reject("Failures");
 });
 
+function fetchUsers(){
+    let x=fetch("https://jsonplaceholder.typicode.com/users");
+    // console.log(x);
+    x.then((response)=>{
+        return response.json().then(data=>{
+            // console.log(data);
+            let store=document.getElementById("store");
+            data.map((user)=>{
+                store.innerHTML+=`
+                <tr>
+                    <td>${user.id}</td>
+                     <td>${user.name}</td>
+                      <td>${user.email}</td>
+                      <td>${user.company.name}</td>
+                      
+
+                      
+
+                      
+
+                </tr>`
+            })
+        })
+     
+    })
+    .catch(err=>console.log(err))
+}
+fetchUsers();
+
 // console.log(p3);
 
 p3.then((data)=>{console.log(data);})
