@@ -6,14 +6,27 @@
 // div.innerHTML="<h1>Header</h1>"
 // console.log(div);
 
-let ele=document.getElementsByClassName("test");
-// console.log(ele);
-// console.log(Array.isArray(ele));
-ele[0].style.background="yellow";
+// let ele=document.getElementsByClassName("test");
+// // console.log(ele);
+// // console.log(Array.isArray(ele));
+// ele[0].style.background="yellow";
 
-let x=[...ele];
-console.log(x,Array.isArray(x));
-x.map((element)=>{
-    // console.log(element);
-    // element.style.backgroundColor="teal";
-})
+// let x=[...ele];
+// console.log(x,Array.isArray(x));
+// x.map((element)=>{
+//     // console.log(element);
+//     // element.style.backgroundColor="teal";
+// })
+
+// let ele=document.querySelector("demo");
+// console.log(ele);
+
+// let ele=document.querySelector(".test");
+// console.log(ele);
+
+
+// let ele=document.querySelectorAll(".test");
+// // console.log(ele);
+// [...ele].map((element)=>{
+//     console.log(element.innerText);
+// })
